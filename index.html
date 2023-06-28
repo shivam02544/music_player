@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-con">
+        <div class="top-section">
+            <i class="fa-solid fa-chevron-down"></i>
+            <span>Music Player</span>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="img-section">
+            <img id="img" src="./data/colorful-music-notes-background-with-sheet-music-disc-treble-clef-illustration-ai-generative_118124-13527.avif">
+        </div>
+        <div class="music-details">
+            <span class="music-name">Ram Siya Ram</span>
+            <span class="artist-name">Sachet Tandon</span>
+        </div>
+        <div class="progress-bar">
+            <input type="range" value="0" id="progress">
+        </div>
+        <div class="music-controls">
+            <div><i id="prev" class="fa-solid fa-backward"></i></div>
+            <div><i id="playpause" class="fa-solid fa-play"></i></div>
+            <div><i id="next" class="fa-solid fa-forward"></i></div>
+        </div>
+        <audio paused id="audio" src="./data/Ram Siya Ram - Sachet Tandon 128 Kbps.mp3"></audio>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
